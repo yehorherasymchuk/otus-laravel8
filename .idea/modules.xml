@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../docker-laravel/.idea/docker-laravel.iml" filepath="$PROJECT_DIR$/../docker-laravel/.idea/docker-laravel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../laradock/.idea/laradock.iml" filepath="$PROJECT_DIR$/../laradock/.idea/laradock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/otus-blog.iml" filepath="$PROJECT_DIR$/.idea/otus-blog.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66441e06-7777-45a1-aba6-f7b1221f7ee3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../laradock/adminer/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/aerospike/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/apache2/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/apache2/sites/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/apache2/sites/default.apache.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/apache2/sites/sample.conf.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/apache2/vhost.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/aws-eb-cli/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/aws-eb-cli/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/beanstalkd-console/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/beanstalkd/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/caddy/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/caddy/caddy/Caddyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/caddy/caddy/authlist.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/cassandra/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/couchdb/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../laradock/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/gearman/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/gitlab/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/grafana/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/graylog/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/graylog/config/graylog.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/graylog/config/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/hhvm/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/hhvm/server.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ide-codiad/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ide-codiad/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ide-icecoder/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ide-theia/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ide-webide/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ipython/Dockerfile.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ipython/Dockerfile.engine" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ipython/ipcontroller-client.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/ipython/ipcontroller-engine.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/Jenkinsfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/init.groovy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/install-plugins.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/jenkins-support" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/jenkins.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/jenkins_home/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/plugins.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/publish.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/functions.bats" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/install-plugins.bats" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/install-plugins/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/install-plugins/update/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/plugins/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/plugins/plugins.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/runtime.bats" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/test_helpers.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/tests/upgrade-plugins/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jenkins/update-official-library.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/Dockerfile.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/jupyterhub_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/start-notebook.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/start-singleuser.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/jupyterhub/userlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/maildev/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mailhog/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/manticore/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/manticore/config/sphinx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mariadb/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mariadb/docker-entrypoint-initdb.d/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mariadb/docker-entrypoint-initdb.d/createdb.sql.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mariadb/my.cnf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/minio/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mosquitto/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mosquitto/mosquitto.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mssql/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/mysql/docker-entrypoint-initdb.d/createdb.sql.example" beforeDir="false" afterPath="$PROJECT_DIR$/../laradock/mysql/docker-entrypoint-initdb.d/createdb.sql.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/neo4j/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/nginx/sites/laravel.conf.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../laradock/php-fpm/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/portainer/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres-postgis/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/docker-entrypoint-initdb.d/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/docker-entrypoint-initdb.d/createdb.sh.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/docker-entrypoint-initdb.d/init_confluence_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/docker-entrypoint-initdb.d/init_gitlab_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/docker-entrypoint-initdb.d/init_jupyterhub_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/postgres/docker-entrypoint-initdb.d/init_sonarqube_db.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/rethinkdb/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/selenium/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/solr/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/sonarqube/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/thumbor/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/traefik/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/traefik/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/varnish/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/varnish/default.vcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/varnish/default_wordpress.vcl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/varnish/start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/workspace/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../laradock/workspace/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laradock/zookeeper/Dockerfile" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../laradock" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9002" />
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/vendor/jaybizzle/crawler-detect" />
+      <path value="$PROJECT_DIR$/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/vendor/jenssegers/agent" />
+      <path value="$PROJECT_DIR$/vendor/laravel/jetstream" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1j2mUFf12WWuqz6v6715P7BZp6P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Policies" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Policies" />
+      <recent name="$PROJECT_DIR$/../laradock/nginx/sites" />
+      <recent name="$PROJECT_DIR$/resources/views/payments/stripe" />
+      <recent name="$PROJECT_DIR$/public/css" />
+      <recent name="$PROJECT_DIR$/resources/views/blocks/form" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Services" />
+      <recent name="$PROJECT_DIR$/resources/views/products/blocks/header" />
+      <recent name="$PROJECT_DIR$/resources/views/products/blocks" />
+      <recent name="$PROJECT_DIR$/resources/sass/products" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66441e06-7777-45a1-aba6-f7b1221f7ee3" name="Default Changelist" comment="" />
+      <created>1603010576309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603010576309</updated>
+      <workItem from="1603010577651" duration="9326000" />
+      <workItem from="1603126455215" duration="3743000" />
+      <workItem from="1603990532693" duration="2227000" />
+      <workItem from="1604591051092" duration="8934000" />
+      <workItem from="1604938868220" duration="5783000" />
+      <workItem from="1605196512537" duration="7034000" />
+      <workItem from="1605543524221" duration="7188000" />
+      <workItem from="1605803081476" duration="8021000" />
+      <workItem from="1605890410127" duration="2167000" />
+      <workItem from="1605977097794" duration="1816000" />
+      <workItem from="1606135138835" duration="1469000" />
+      <workItem from="1606409123065" duration="795000" />
+      <workItem from="1606410111148" duration="7441000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
