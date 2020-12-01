@@ -2,6 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66441e06-7777-45a1-aba6-f7b1221f7ee3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Countries/ApiCountriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Orders/Handlers/CreateOrderHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Orders/Handlers/DistributeOnCompanyHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Orders/Handlers/FinishOrderHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Routes/Providers/Api/ApiRoutes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Routes/Providers/Api/ApiRoutesProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/SMS/Clients/MainSMSClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/SMS/SMSService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/Api/Countries/ApiCountriesControllerIndexTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/CMS/Countries/CmsCountriesControllerIndexTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/CMS/Countries/CmsCountriesControllerStoreTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/CMS/Countries/CmsCountriesControllerUpdateTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Services/Countries/Repositories/EloquentCountryRepositoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Services/Orders/Handlers/CreateOrderHandlerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Generators/CountriesGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Generators/UsersGenerator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/adminer/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/aerospike/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/apache2/Dockerfile" beforeDir="false" />
@@ -105,6 +121,22 @@
       <change beforePath="$PROJECT_DIR$/../laradock/varnish/start.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/workspace/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../laradock/workspace/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/zookeeper/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/BasePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/BasePolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/CountryPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/CountryPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Countries/CountriesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Countries/CountriesService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Countries/Repositories/CountryRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Countries/Repositories/CountryRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Countries/Repositories/EloquentCountryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Countries/Repositories/EloquentCountryRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Routes/Providers/CMS/CMSRoutesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Routes/Providers/CMS/CMSRoutesProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +148,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../laradock" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -259,16 +291,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1j2mUFf12WWuqz6v6715P7BZp6P" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Policies" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Feature/Http/Controllers/CMS/Countries" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -279,16 +314,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/Feature/Http/Controllers/CMS/Countries" />
       <recent name="$PROJECT_DIR$/app/Policies" />
       <recent name="$PROJECT_DIR$/../laradock/nginx/sites" />
       <recent name="$PROJECT_DIR$/resources/views/payments/stripe" />
       <recent name="$PROJECT_DIR$/public/css" />
-      <recent name="$PROJECT_DIR$/resources/views/blocks/form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Services" />
@@ -324,11 +359,15 @@
       <workItem from="1606135138835" duration="1469000" />
       <workItem from="1606409123065" duration="795000" />
       <workItem from="1606410111148" duration="7441000" />
+      <workItem from="1606754113619" duration="7819000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

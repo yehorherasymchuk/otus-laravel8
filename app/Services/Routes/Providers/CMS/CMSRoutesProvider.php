@@ -26,7 +26,7 @@ final class CMSRoutesProvider
         Route::group([
             'prefix' => '/cms',
             'as' => 'cms.',
-            'middleware' => 'auth.basic',
+            'middleware' => 'auth',
         ], function () {
             Route::resources([
                 'countries' => CmsCountriesController::class,

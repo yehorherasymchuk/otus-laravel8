@@ -14,6 +14,7 @@ abstract class Permission
     const VIEW_ANY = 'viewAny';
     const VIEW = 'view';
     const CREATE = 'create';
+    const STORE = 'store';
     const UPDATE = 'update';
     const DELETE = 'delete';
     //...

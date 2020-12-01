@@ -11,18 +11,6 @@ class CountryPolicy extends BasePolicy
 {
     use HandlesAuthorization;
 
-    /**
-     * @var AuthService
-     */
-    private $authService;
-
-    public function __construct(
-        AuthService $authService
-    ) {
-
-        $this->authService = $authService;
-    }
-
     public function viewAny(User $user): bool
     {
         return $this->authService->hasUserPermission(

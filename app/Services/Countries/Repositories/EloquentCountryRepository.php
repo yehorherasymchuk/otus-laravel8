@@ -13,14 +13,27 @@ use App\Models\Country;
 class EloquentCountryRepository implements CountryRepositoryInterface
 {
 
-    public function find(int $id)
+    public function find(?int $id): ?Country
     {
+        if (!$id) {
+            return null;
+        }
         return Country::find($id);
     }
 
     public function search(array $filters = [])
     {
         return Country::paginate();
+    }
+
+    public function getList(array $filters = [])
+    {
+        return Country::all();
+    }
+
+    public function findByName(string $name): ?Country
+    {
+        return Country::where('name', $name)->first();
     }
 
     public function getCountriesByContinentName(string $continentName)

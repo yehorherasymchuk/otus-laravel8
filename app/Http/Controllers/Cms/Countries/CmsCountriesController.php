@@ -7,6 +7,7 @@ use App\Http\Controllers\Cms\Countries\Requests\UpdateCountryRequest;
 use App\Models\User;
 use App\Policies\Abilities;
 use App\Policies\Permission;
+use App\Services\Routes\Providers\CMS\CMSRoutes;
 use View;
 use App\Models\Country;
 use App\Services\Countries\CountriesService;
@@ -58,11 +59,12 @@ class CmsCountriesController extends Controller
      */
     public function store(StoreCountryRequest $request)
     {
+        $this->authorize(Permission::CREATE, Country::class);
         $data = $request->getFormData();
 
         $this->countriesService->storeCountry($data);
 
-        return redirect(route('cms.countries.index'));
+        return redirect(route(CMSRoutes::CMS_COUNTRIES_INDEX));
     }
 
     /**
