@@ -15,6 +15,7 @@ interface CountryRepositoryInterface
     public function find(int $id);
 
     public function search(array $filters = []);
+    public function getList(array $filters = []);
 
     public function createFromArray(array $data): Country;
 

@@ -13,11 +13,7 @@ use App\Services\Auth\AuthService;
 
 abstract class BasePolicy
 {
-
-    /**
-     * @var AuthService
-     */
-    protected $authService;
+    protected AuthService $authService;
 
     public function __construct(
         AuthService $authService
@@ -33,6 +29,7 @@ abstract class BasePolicy
         if (!$user->isModerator()) {
             return false;
         }
+        return false;
     }
 
 

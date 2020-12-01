@@ -12,6 +12,7 @@ use App\Models\Country;
 use App\Services\Countries\Handlers\CreateCountryHandler;
 use App\Services\Countries\Repositories\CountryRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Database\Eloquent\Collection;
 
 class CountriesService
 {
@@ -43,6 +44,11 @@ class CountriesService
     public function searchCountries(): LengthAwarePaginator
     {
         return $this->countryRepository->search();
+    }
+
+    public function getCountries(): Collection
+    {
+        return $this->countryRepository->getList();
     }
 
     /**
