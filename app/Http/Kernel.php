@@ -2,6 +2,9 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CacheControl;
+use App\Http\Middleware\CustomAuth;
+use App\Http\Middleware\RestrictNonAdultUsers;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -24,6 +27,26 @@ class Kernel extends HttpKernel
     ];
 
     /**
+     * The priority-sorted list of middleware.
+     *
+     * Forces non-global middleware to always be in the given order.
+     *
+     * @var string[]
+     */
+    protected $middlewarePriority = [
+        \Illuminate\Cookie\Middleware\EncryptCookies::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        \Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests::class,
+        \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        \Illuminate\Session\Middleware\AuthenticateSession::class,
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        \Illuminate\Auth\Middleware\Authorize::class,
+        CustomAuth::class,
+        RestrictNonAdultUsers::class,
+    ];
+
+    /**
      * The application's route middleware groups.
      *
      * @var array
@@ -37,6 +60,11 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+        'cms' => [
+            'auth',
+            RestrictNonAdultUsers::class,
         ],
 
         'api' => [
@@ -62,5 +90,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'auth.restrictNonAdultUsers' => RestrictNonAdultUsers::class,
+        'cache.control' => CacheControl::class,
     ];
 }

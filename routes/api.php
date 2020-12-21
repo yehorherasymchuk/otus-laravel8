@@ -28,5 +28,6 @@ Route::get('/users/{user}/{lang?}', function (int $id, ?string $locale = null) {
 })->middleware('auth:api');
 
 
+
 $apiRoutesProvider = app(\App\Services\Routes\Providers\Api\ApiRoutesProvider::class);
 $apiRoutesProvider->registerRoutes();

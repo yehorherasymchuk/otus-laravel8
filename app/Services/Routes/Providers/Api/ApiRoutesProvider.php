@@ -18,6 +18,7 @@ class ApiRoutesProvider
     {
         Route::group([
             'as' => 'api.',
+            'middleware' => 'cache.headers:180,12,60',
         ], function () {
             Route::apiResources([
                 'countries' => ApiCountriesController::class,

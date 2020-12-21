@@ -33,7 +33,7 @@ class CmsCountriesController extends Controller
      */
     public function index(Request $request)
     {
-        $this->authorize(Permission::VIEW_ANY, Country::class);
+//        $this->authorize(Permission::VIEW_ANY, Country::class);
 
         View::share([
             'countries' => Country::paginate(),
@@ -49,7 +49,7 @@ class CmsCountriesController extends Controller
      */
     public function create()
     {
-        $this->authorize(Permission::CREATE, Country::class);
+//        $this->authorize(Permission::CREATE, Country::class);
         return view('countries.create');
     }
 

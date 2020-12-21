@@ -8,7 +8,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="{{ mix('css/products/app.css') }}">
+    <link rel="stylesheet" href="{{ '/css/products/app.css' }}">
     @yield('styles')
 </head>
 <body>

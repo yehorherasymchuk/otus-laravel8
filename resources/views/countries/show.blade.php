@@ -13,11 +13,11 @@
                     'title' => __('messages.home'),
                 ],
                 [
-                    'url' => route('cms.countries.index'),
+                    'url' => route('cms.countries.index', ['locale' => App::getLocale()]),
                     'title' => __('messages.countries'),
                 ],
                 [
-                    'url' => route('cms.countries.create'),
+                    'url' => route('cms.countries.create', ['locale' => App::getLocale()]),
                     'title' => __('messages.addCountry'),
                 ],
             ];

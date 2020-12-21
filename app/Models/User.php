@@ -18,6 +18,7 @@ use Laravel\Sanctum\HasApiTokens;
  * @property string $email
  * @property int|null $role_id
  * @property int $level
+ * @property int $age
  * @property \Illuminate\Support\Carbon|null $email_verified_at
  * @property string $password
  * @property string|null $two_factor_secret
@@ -71,6 +72,7 @@ class User extends Authenticatable
     const LEVEL_USER = 10;
     const LEVEL_MODERATOR = 20;
     const LEVEL_ADMIN = 30;
+
 
     /**
      * The attributes that are mass assignable.
