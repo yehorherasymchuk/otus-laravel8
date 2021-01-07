@@ -8,8 +8,11 @@
 namespace App\Services\Countries;
 
 
+use App\Jobs\Queue;
 use App\Models\Country;
 use App\Services\Countries\Handlers\CreateCountryHandler;
+use App\Services\Countries\Jobs\StoreCountry;
+use App\Services\Countries\Jobs\UpdateCountry;
 use App\Services\Countries\Repositories\CountryRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
@@ -51,27 +54,16 @@ class CountriesService
         return $this->countryRepository->getList();
     }
 
-    /**
-     * @param array $data
-     * @return Country
-     */
-    public function storeCountry(array $data): Country
+    public function storeCountry(array $data): void
     {
-        $country = $this->createCountryHandler->handle($data);
-
-        // do some logic
-
-        return $country;
+        StoreCountry::dispatch($data)
+            ->onQueue(Queue::HIGH);
     }
 
-    /**
-     * @param Country $country
-     * @param array $data
-     * @return Country
-     */
-    public function updateCountry(Country $country, array $data): Country
+    public function updateCountry(Country $country, array $data): void
     {
-        return $this->countryRepository->updateFromArray($country, $data);
+        UpdateCountry::dispatch($country, $data)
+            ->onQueue(Queue::HIGH);
     }
 
 }

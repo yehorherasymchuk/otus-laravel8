@@ -12,10 +12,10 @@ use App\Models\Country;
 use App\Services\Countries\Repositories\CountryRepositoryInterface;
 use Carbon\Carbon;
 
-class CreateCountryHandler
+class UpdateCountryHandler
 {
 
-    private $countryRepository;
+    private CountryRepositoryInterface $countryRepository;
 
     public function __construct(
         CountryRepositoryInterface $countryRepository
@@ -25,14 +25,10 @@ class CreateCountryHandler
     }
 
 
-    public function handle(array $data): Country
+    public function handle(Country $country, array $data): void
     {
-        $data['created_at'] = Carbon::create()->subDay();
-        $data['name'] = ucfirst($data['name']);
-
         sleep(10);
-
-        return $this->countryRepository->createFromArray($data);
+        $this->countryRepository->updateFromArray($country, $data);
     }
 
 }

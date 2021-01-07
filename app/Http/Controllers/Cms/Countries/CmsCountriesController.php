@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Cms\Countries;
 
+use App;
 use App\Http\Controllers\Cms\Countries\Requests\StoreCountryRequest;
 use App\Http\Controllers\Cms\Countries\Requests\UpdateCountryRequest;
 use App\Models\User;
@@ -59,12 +60,13 @@ class CmsCountriesController extends Controller
      */
     public function store(StoreCountryRequest $request)
     {
-        $this->authorize(Permission::CREATE, Country::class);
         $data = $request->getFormData();
 
         $this->countriesService->storeCountry($data);
 
-        return redirect(route(CMSRoutes::CMS_COUNTRIES_INDEX));
+        return redirect(route(CMSRoutes::CMS_COUNTRIES_INDEX, [
+            'locale' => App::getLocale(),
+        ]));
     }
 
     /**
@@ -88,12 +90,12 @@ class CmsCountriesController extends Controller
      */
     public function update(UpdateCountryRequest $request, Country $country, ?int $city = null)
     {
-        $this->authorize(Abilities::UPDATE, $country);
-
         $this->countriesService->updateCountry($country, $request->all());
         $country->update($request->all());
 
-        return redirect(route('cms.countries.index'));
+        return redirect(route('cms.countries.index', [
+            'locale' => App::getLocale(),
+        ]));
     }
 
     /**
