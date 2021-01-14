@@ -23,7 +23,11 @@ class CompanyFactory extends Factory
     public function definition()
     {
         $name = $this->faker->unique()->company;
+        if (Company::where('name', $name)->count()) {
+            $name .= microtime(true);
+        }
         $slug = Str::slug($name);
+
         return [
             'name' => $name,
             'url' => $slug,

@@ -4,6 +4,7 @@ namespace App\Models;
 
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Laravel\Scout\Searchable;
 
 /**
  * App\Models\Company
@@ -36,6 +37,7 @@ class Company extends Model
 {
 
     use HasFactory;
+    use Searchable;
 
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 10;

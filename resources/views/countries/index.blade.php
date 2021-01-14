@@ -19,6 +19,7 @@
     @endphp
     @include('blocks.breadcrumbs.index', ['breadcrumbs' => $breadcrumbs, 'active' => 'countries',])
     @include('countries.blocks.header.list')
+    @include('countries.blocks.filters.index')
     @include('countries.blocks.list.index')
 </div>
 @endsection

@@ -13,11 +13,11 @@
                     'title' => __('messages.home'),
                 ],
                 [
-                    'url' => route(\App\Services\Routes\Providers\CMS\CMSRoutes::CMS_COMPANIES_INDEX),
+                    'url' => route(\App\Services\Routes\Providers\CMS\CMSRoutes::CMS_COMPANIES_INDEX, ['locale' => App::getLocale()]),
                     'title' => __('messages.companies'),
                 ],
                 [
-                    'url' => route(\App\Services\Routes\Providers\CMS\CMSRoutes::CMS_COMPANIES_CREATE),
+                    'url' => route(\App\Services\Routes\Providers\CMS\CMSRoutes::CMS_COMPANIES_CREATE, ['locale' => App::getLocale()]),
                     'title' => __('messages.addCompany'),
                 ],
             ];

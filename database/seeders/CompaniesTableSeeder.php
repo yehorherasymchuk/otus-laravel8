@@ -16,7 +16,7 @@ class CompaniesTableSeeder extends Seeder
     public function run()
     {
         foreach (City::all() as $city) {
-            Company::factory(10)->create([
+            Company::factory(1000)->create([
                 'city_id' => $city->id,
             ]);
         }

@@ -14,6 +14,7 @@ use App\Services\Countries\Handlers\CreateCountryHandler;
 use App\Services\Countries\Jobs\StoreCountry;
 use App\Services\Countries\Jobs\UpdateCountry;
 use App\Services\Countries\Repositories\CountryRepositoryInterface;
+use App\Services\Countries\Repositories\CountrySearchRepository;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -22,14 +23,17 @@ class CountriesService
 
     private CountryRepositoryInterface $countryRepository;
     private CreateCountryHandler $createCountryHandler;
+    private CountrySearchRepository $countrySearchRepository;
 
     public function __construct(
         CreateCountryHandler $createCountryHandler,
-        CountryRepositoryInterface $countryRepository
+        CountryRepositoryInterface $countryRepository,
+        CountrySearchRepository $countrySearchRepository
     )
     {
         $this->createCountryHandler = $createCountryHandler;
         $this->countryRepository = $countryRepository;
+        $this->countrySearchRepository = $countrySearchRepository;
     }
 
     /**
@@ -41,12 +45,9 @@ class CountriesService
         return $this->countryRepository->find($id);
     }
 
-    /**
-     * @return LengthAwarePaginator
-     */
-    public function searchCountries(): LengthAwarePaginator
+    public function searchCountries(string $query = ''): \Illuminate\Support\Collection
     {
-        return $this->countryRepository->search();
+        return $this->countrySearchRepository->search($query);
     }
 
     public function getCountries(): Collection

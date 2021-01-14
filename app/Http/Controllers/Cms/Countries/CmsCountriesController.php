@@ -18,7 +18,7 @@ use App\Http\Controllers\Controller;
 class CmsCountriesController extends Controller
 {
 
-    protected $countriesService;
+    protected CountriesService $countriesService;
 
     public function __construct(
         CountriesService $countriesService
@@ -37,7 +37,9 @@ class CmsCountriesController extends Controller
 //        $this->authorize(Permission::VIEW_ANY, Country::class);
 
         View::share([
-            'countries' => Country::paginate(),
+            'countries' => $this->countriesService->searchCountries(
+                $request->get('q', '') ?? '',
+            ),
         ]);
 
         return view('countries.index');

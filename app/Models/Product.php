@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Laravel\Scout\Searchable;
 
 /**
  * App\Models\Product
@@ -30,12 +31,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Product whereRemainingCount($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Product whereTotalCount($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Product whereUpdatedAt($value)
- * @property-read \App\Models\Company $company
  */
 class Product extends Model
 {
 
     use HasFactory;
+    use Searchable;
 
     public function company()
     {

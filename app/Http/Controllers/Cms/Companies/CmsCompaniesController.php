@@ -24,12 +24,14 @@ class CmsCompaniesController extends CmsBaseController
         $this->companiesService = $companiesService;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $companies = Company::paginate();
-
         View::share([
-            'companies' => $companies,
+            'companies' => $this->companiesService->searchCompanies(
+                $request->get('q') ?? '',
+                50,
+                0
+            ),
         ]);
 
         return view('cms.companies.index');

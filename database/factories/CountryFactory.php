@@ -31,7 +31,7 @@ class CountryFactory extends Factory
         shuffle($continents);
         $continent = array_shift($continents);
         return [
-            'name' => $this->faker->unique()->country . microtime(),
+            'name' => $this->faker->unique()->country,
             'continent_name' => $continent,
         ];
     }

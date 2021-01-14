@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66441e06-7777-45a1-aba6-f7b1221f7ee3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Countries/Handlers/UpdateCountryHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Countries/Jobs/StoreCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Countries/Jobs/UpdateCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_21_172101_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Envoy-full.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Companies/Repositories/CompanySearchRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Companies/Repositories/ScoutCompanySearchRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Countries/Repositories/CountrySearchRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Countries/Repositories/ScoutCountrySearchRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/elastic.client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/elastic.scout_driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/scout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/envoy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/init.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/app-maintenance-mode.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/clean-old-version.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/composer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/finish-deploy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/git.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/migrations.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/prepare-source-dir.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/sync-deployment-dir.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/livesite/update-sym-links.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/envoy/setup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/companies/blocks/filters/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/countries/blocks/filters/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/adminer/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/aerospike/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../laradock/apache2/Dockerfile" beforeDir="false" />
@@ -114,13 +132,27 @@
       <change beforePath="$PROJECT_DIR$/.idea/otus-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/otus-blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Companies/CmsCompaniesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Companies/CmsCompaniesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/City.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Country.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Companies/CompaniesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Companies/CompaniesService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/Countries/CountriesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Countries/CountriesService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Countries/Handlers/CreateCountryHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Countries/Handlers/CreateCountryHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CompanyFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CompanyFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CountryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CountryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/CompaniesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CompaniesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/companies/blocks/form/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/companies/blocks/form/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/companies/blocks/header/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/companies/blocks/header/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/companies/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/companies/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/companies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/companies/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/blocks/list/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/blocks/list/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +165,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -288,6 +321,13 @@
       <path value="$PROJECT_DIR$/vendor/vladimir-yuldashev/laravel-queue-rabbitmq" />
       <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
       <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
+      <path value="$PROJECT_DIR$/vendor/elasticsearch/elasticsearch" />
+      <path value="$PROJECT_DIR$/vendor/ezimuel/ringphp" />
+      <path value="$PROJECT_DIR$/vendor/ezimuel/guzzlestreams" />
+      <path value="$PROJECT_DIR$/vendor/babenkoivan/elastic-adapter" />
+      <path value="$PROJECT_DIR$/vendor/babenkoivan/elastic-scout-driver" />
+      <path value="$PROJECT_DIR$/vendor/babenkoivan/elastic-client" />
+      <path value="$PROJECT_DIR$/vendor/laravel/scout" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j2mUFf12WWuqz6v6715P7BZp6P" />
@@ -304,7 +344,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/Companies/Repositories" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -320,11 +360,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Services/Companies/Repositories" />
+      <recent name="$PROJECT_DIR$/resources/views/cms/companies/blocks" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/Services/Countries/Handlers" />
-      <recent name="$PROJECT_DIR$/app/Services/Countries/Jobs" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app/Services/Utils" />
-      <recent name="$PROJECT_DIR$/app/Console/QR" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Services/Countries/Jobs" />
@@ -366,7 +406,9 @@
       <workItem from="1608222624815" duration="6948000" />
       <workItem from="1608378816362" duration="115000" />
       <workItem from="1608569045388" duration="5718000" />
-      <workItem from="1610015726522" duration="309000" />
+      <workItem from="1610015726522" duration="9967000" />
+      <workItem from="1610105730272" duration="81000" />
+      <workItem from="1610384021794" duration="1471000" />
     </task>
     <servers />
   </component>

@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.4",
         "ext-imagick": "*",
+        "babenkoivan/elastic-scout-driver": "^1.2",
         "bacon/bacon-qr-code": "^2.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -18,6 +19,7 @@
         "laravel/horizon": "^5.6",
         "laravel/jetstream": "^1.4",
         "laravel/sanctum": "^2.6",
+        "laravel/scout": "^8.5",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^3.1",
         "laravelcollective/html": "^6.2",
