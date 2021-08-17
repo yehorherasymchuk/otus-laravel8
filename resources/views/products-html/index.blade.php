@@ -8,7 +8,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="{{ mix('css/products/app.css') }}">
+    <link rel="stylesheet" href="/css/products/app.css">
 </head>
 <body>
 
@@ -21,13 +21,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">{{ __('messages.nav.home') }} <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/companies">Companies</a>
+                <a class="nav-link" href="/companies">{{ trans('messages.nav.companies') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/products">Products</a>
+                <a class="nav-link" href="/products">@lang('messages.nav.companies')</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/users">Users</a>

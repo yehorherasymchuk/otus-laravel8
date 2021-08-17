@@ -33,7 +33,7 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="form-group">
                         <label for="title">{{ trans('messages.title') }}</label>
-                        <input type="text" name="title" class="form-control" value="{{ is_null(request()->get('name')) ? $model->name : request()->get('name') }}">
+                        <input type="text" name="title" class="form-control" value="">
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4">

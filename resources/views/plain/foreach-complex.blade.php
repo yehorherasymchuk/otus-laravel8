@@ -6,7 +6,7 @@
 
     @php($newsList = [
         [
-            'title' => '<b>Worlds fastest man</b> Coleman investigated over three alleged missed drugs tests',
+            'title' => '<script>alert(1);</script><i>Worlds fastest man</i> Coleman investigated over three alleged missed drugs tests',
             'url' => 'https://bbc.com/news-page',
             'tags' => [
                 'breaking',

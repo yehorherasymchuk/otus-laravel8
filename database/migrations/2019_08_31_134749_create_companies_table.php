@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Company;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
@@ -17,9 +18,9 @@ class CreateCompaniesTable extends Migration
     )
     {
         Schema::create('companies', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('city_id');
-            $table->unsignedSmallInteger('status');
+            $table->id();
+            $table->unsignedBigInteger('city_id');
+            $table->unsignedSmallInteger('status')->default(Company::STATUS_ACTIVE);
             $table->string('name');
             $table->string('url');
             $table->text('description')->nullable();

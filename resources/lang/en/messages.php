@@ -1,7 +1,9 @@
 <?php
 
 return [
+    'hello' => 'Hello, :name',
     'home' => 'Home',
+    'continent' => 'Continent',
     'products' => 'Products',
     'companies' => 'Companies',
     'countries' => 'Countries',
@@ -10,8 +12,9 @@ return [
     'title' => 'Title',
     'name' => 'Name',
     'url' => 'Url',
+    'count' => 'count',
     'price' => 'Price',
-    'remaining' => 'Remaining',
+    'remaining' => 'Remaining of :total',
     'created' => 'Created At',
     'productsOf' => 'Products of :name',
     'productsHeaderDescription' => 'This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.',
@@ -24,5 +27,6 @@ return [
     'edit' => 'Edit',
     'add' => 'Add',
     'totalCount' => 'Total Count',
-    'remainingOfTotal' => '{0} None of :total|{1} One of :total|[2,*] :remaining of :total',
+
+    'remainingOfTotal' => '{0} None|{1, 5} One of :total|[2,*] :remaining of :total',
 ];

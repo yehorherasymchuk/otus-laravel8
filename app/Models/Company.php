@@ -31,6 +31,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Company whereUrl($value)
  * @property int $status
  * @method static \Illuminate\Database\Eloquent\Builder|Company whereStatus($value)
+ * @method static \Database\Factories\CompanyFactory factory(...$parameters)
  */
 class Company extends Model
 {

@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Model as EloquentModel;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Model query()
  * @mixin \Eloquent
  */
-class Model extends EloquentModel
+abstract class Model extends EloquentModel
 {
 
     public function isNew(): bool

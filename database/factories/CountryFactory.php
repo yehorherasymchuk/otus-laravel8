@@ -16,6 +16,7 @@ class CountryFactory extends Factory
      */
     protected $model = Country::class;
 
+
     /**
      * Define the model's default state.
      *
@@ -23,16 +24,8 @@ class CountryFactory extends Factory
      */
     public function definition()
     {
-        $continents = [
-            'Europe',
-            'Asia',
-            'USA',
-        ];
-        shuffle($continents);
-        $continent = array_shift($continents);
         return [
             'name' => $this->faker->unique()->country . microtime(),
-            'continent_name' => $continent,
         ];
     }
 }

@@ -20,6 +20,5 @@ Route::get('/', function () {
 $cmsRoutesProvider = app(\App\Services\Routes\Providers\CMS\CMSRoutesProvider::class);
 $cmsRoutesProvider->registerRoutes();
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

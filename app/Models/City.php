@@ -28,6 +28,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\City whereUpdatedAt($value)
  * @property string $slug
  * @method static Builder|City whereSlug($value)
+ * @method static \Database\Factories\CityFactory factory(...$parameters)
  */
 class City extends Model
 {

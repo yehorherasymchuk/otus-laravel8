@@ -8,15 +8,20 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="{{ mix('css/products/app.css') }}">
+    <link rel="stylesheet" href="/css/products/app.css?{{time()}}">
     @yield('styles')
 </head>
 <body>
 
-@include('products.blocks.navbar.index')
+
+@yield('navbar')
+@section('navbar')
+    @include('products.blocks.navbar.index')
+@endsection
 
 <div class="container">
     @yield('content')
+
 </div>
 
 @include('products.blocks.footer.index')

@@ -7,6 +7,7 @@ use App\Http\Controllers\Cms\Countries\Requests\UpdateCountryRequest;
 use App\Models\User;
 use App\Policies\Abilities;
 use App\Policies\Permission;
+use Illuminate\Database\Eloquent\Collection;
 use View;
 use App\Models\Country;
 use App\Services\Countries\CountriesService;
@@ -32,10 +33,15 @@ class CmsCountriesController extends Controller
      */
     public function index(Request $request)
     {
-        $this->authorize(Permission::VIEW_ANY, Country::class);
+        /** @var Collection $collection */
+        $collection = Country::with([
+            'continent',
+            'cities',
+        ])->paginate();
+
 
         View::share([
-            'countries' => Country::paginate(),
+            'countries' => $collection,
         ]);
 
         return view('countries.index');

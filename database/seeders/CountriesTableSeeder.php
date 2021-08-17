@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Continent;
 use App\Models\Country;
-use DB;
 use Illuminate\Database\Seeder;
 
 class CountriesTableSeeder extends Seeder
@@ -15,8 +15,11 @@ class CountriesTableSeeder extends Seeder
      */
     public function run()
     {
-
-        Country::factory(10)->create();
+        foreach (Continent::all() as $continent) {
+            Country::factory(50)->create([
+                'continent_id' => $continent,
+            ]);
+        }
 
     }
 }

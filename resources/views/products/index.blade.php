@@ -5,12 +5,11 @@
 @section('content')
 
 <div class="container">
-    <h1>{{ App::getLocale() }}</h1>
+    <h1>{{__('messages.hello', ['name' => 'Yehor']) }}</h1>
     @php
         $breadcrumbs = [
             [
                 'url' => '/',
-                'title' => __('messages.home'),
                 'title' => __('messages.home'),
             ],
             [
@@ -25,6 +24,8 @@
     @endphp
     @include('products.blocks.breadcrumbs.index', ['breadcrumbs' => $breadcrumbs])
     @include('products.blocks.header.index', ['company' => $company])
+
     @include('products.blocks.list.index', ['products' => $products])
 </div>
 @endsection
+

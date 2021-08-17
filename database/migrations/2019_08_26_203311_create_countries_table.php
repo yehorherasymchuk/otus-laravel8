@@ -16,8 +16,14 @@ class CreateCountriesTable extends Migration
         Schema::create('countries', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name')->unique();
-            $table->string('continent_name');
+
+            $table->unsignedBigInteger('continent_id');
+
             $table->timestamps();
+            $table->foreign('continent_id')
+                ->references('id')
+                ->on('continents')
+                ->onDelete('restrict');
         });
     }
 
