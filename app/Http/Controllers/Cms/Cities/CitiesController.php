@@ -6,26 +6,24 @@ use App\Http\Controllers\Cms\Cities\Requests\StoreCityRequest;
 use App\Models\City;
 use App\Services\Cities\CitiesService;
 use App\Services\Countries\CountriesService;
-use App\Services\SimpleFoo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class CitiesController extends Controller
 {
-    protected $countriesService;
-    protected $citiesService;
-    protected $simpleFoo;
+
+    private CountriesService $countriesService;
+    private CitiesService $citiesService;
 
     public function __construct(
         CountriesService $countriesService,
-        CitiesService $citiesService,
-        SimpleFoo $simpleFoo
+        CitiesService $citiesService
     )
     {
         $this->countriesService = $countriesService;
         $this->citiesService = $citiesService;
-        $this->simpleFoo = $simpleFoo;
     }
+
     /**
      * Display a listing of the resource.
      *

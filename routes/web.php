@@ -13,13 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
-
 $cmsRoutesProvider = app(\App\Services\Routes\Providers\CMS\CMSRoutesProvider::class);
 $cmsRoutesProvider->registerRoutes();
 
+
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [\App\Http\Controllers\HomeIndexController::class, 'index'])->name('home');

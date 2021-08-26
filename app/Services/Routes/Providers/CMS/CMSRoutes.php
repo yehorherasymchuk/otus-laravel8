@@ -11,6 +11,13 @@ namespace App\Services\Routes\Providers\CMS;
 final class CMSRoutes
 {
 
+    const CMS_CONTINENTS_INDEX   = 'cms.continents.index';
+    const CMS_CONTINENTS_CREATE  = 'cms.continents.create';
+    const CMS_CONTINENTS_EDIT    = 'cms.continents.edit';
+    const CMS_CONTINENTS_SHOW    = 'cms.continents.show';
+    const CMS_CONTINENTS_STORE   = 'cms.continents.store';
+    const CMS_CONTINENTS_UPDATE  = 'cms.continents.update';
+
     const CMS_COUNTRIES_INDEX = 'cms.countries.index';
     const CMS_COUNTRIES_CREATE = 'cms.countries.create';
     const CMS_COUNTRIES_EDIT = 'cms.countries.edit';

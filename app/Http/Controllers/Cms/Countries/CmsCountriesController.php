@@ -4,9 +4,8 @@ namespace App\Http\Controllers\Cms\Countries;
 
 use App\Http\Controllers\Cms\Countries\Requests\StoreCountryRequest;
 use App\Http\Controllers\Cms\Countries\Requests\UpdateCountryRequest;
-use App\Models\User;
-use App\Policies\Abilities;
 use App\Policies\Permission;
+use App\Services\Routes\Providers\CMS\CMSRoutes;
 use View;
 use App\Models\Country;
 use App\Services\Countries\CountriesService;
@@ -16,23 +15,15 @@ use App\Http\Controllers\Controller;
 class CmsCountriesController extends Controller
 {
 
-    protected $countriesService;
-
-    public function __construct(
-        CountriesService $countriesService
-    )
+    private function getCountriesService(): CountriesService
     {
-        $this->countriesService = $countriesService;
+        return app(CountriesService::class);
     }
 
-    /**
-     * @param Request $request
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
-     * @throws \Illuminate\Auth\Access\AuthorizationException
-     */
+
     public function index(Request $request)
     {
-        $this->authorize(Permission::VIEW_ANY, Country::class);
+//        $this->authorize(Permission::VIEW_ANY, Country::class);
 
         View::share([
             'countries' => Country::paginate(),
@@ -48,7 +39,7 @@ class CmsCountriesController extends Controller
      */
     public function create()
     {
-        $this->authorize(Permission::CREATE, Country::class);
+//        $this->authorize(Permission::CREATE, Country::class);
         return view('countries.create');
     }
 
@@ -60,9 +51,11 @@ class CmsCountriesController extends Controller
     {
         $data = $request->getFormData();
 
-        $this->countriesService->storeCountry($data);
+        $this->getCountriesService()->storeCountry($data);
 
-        return redirect(route('cms.countries.index'));
+        return redirect(
+            route(CMSRoutes::CMS_COUNTRIES_INDEX),
+        );
     }
 
     /**
@@ -88,7 +81,7 @@ class CmsCountriesController extends Controller
     {
         $this->authorize(Abilities::UPDATE, $country);
 
-        $this->countriesService->updateCountry($country, $request->all());
+        $this->getCountriesService()->updateCountry($country, $request->all());
         $country->update($request->all());
 
         return redirect(route('cms.countries.index'));

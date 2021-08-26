@@ -14,15 +14,14 @@ class FormRequest extends BaseFormRequest
 {
 
 
-    public function getFormData()
+    public function getFormData(): array
     {
         $data = $this->request->all();
 
-        $data = Arr::except($data, [
+        return Arr::except($data, [
             '_token',
+            '_method',
         ]);
-
-        return $data;
     }
 
 }

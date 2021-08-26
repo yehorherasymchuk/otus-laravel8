@@ -13,6 +13,6 @@ use App\Http\Controllers\Controller;
 class CmsBaseController extends Controller
 {
 
-    const DEFAULT_MODELS_PER_PAGE = 25;
+    const DEFAULT_MODELS_PER_PAGE = 50;
 
 }
