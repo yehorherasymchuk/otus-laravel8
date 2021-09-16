@@ -9,27 +9,25 @@ namespace App\Services\Routes\Providers\CMS;
 
 
 use App\Http\Controllers\Api\Continents\ApiContinentController;
+use App\Http\Controllers\Api\Countries\CountriesIndexController;
 use App\Http\Controllers\Cms\Cities\CitiesController;
 use App\Http\Controllers\Cms\Companies\CmsCompaniesController;
 use App\Http\Controllers\Cms\Continents\CmsContinentsController;
 use App\Http\Controllers\Cms\Countries\CmsCountriesController;
-use App\Http\Controllers\Cms\Countries\CmsCountriesIndexController;
 use Illuminate\Support\Facades\Route;
 
 final class CMSRoutesProvider
 {
 
-    public function __construct()
-    {
-
-    }
 
     public function registerRoutes()
     {
         Route::group([
-            'prefix' => '/cms',
+            'prefix' => '/{locale}/cms',
             'as' => 'cms.',
-//            'middleware' => 'auth.basic',
+            'middleware' => [
+                'cms',
+            ],
         ], function () {
             Route::resources([
                 'continents' => CmsContinentsController::class,

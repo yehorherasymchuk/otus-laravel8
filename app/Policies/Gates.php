@@ -13,7 +13,7 @@ abstract class Gates
 
     const CMS_VIEW_DASHBOARD = 'CMS_VIEW_DASHBOARD';
 
-    public static $gates = [
+    public static array $gates = [
         self::CMS_VIEW_DASHBOARD,
     ];
 

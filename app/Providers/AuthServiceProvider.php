@@ -2,11 +2,14 @@
 
 namespace App\Providers;
 
+use App\Models\Continent;
 use App\Models\Country;
 use App\Models\Team;
 use App\Models\User;
+use App\Policies\ContinentPolicy;
 use App\Policies\CountryPolicy;
 use App\Policies\DashboardGate;
+use App\Policies\Gates;
 use App\Policies\Permission;
 use App\Policies\TeamPolicy;
 use Gate;
@@ -21,6 +24,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         Team::class => TeamPolicy::class,
+        Continent::class => ContinentPolicy::class,
         Country::class => CountryPolicy::class,
     ];
 
@@ -38,6 +42,6 @@ class AuthServiceProvider extends ServiceProvider
 
     private function registerGates()
     {
-        Gate::define(\App\Policies\Gates::CMS_VIEW_DASHBOARD, 'App\Policies\DashboardGate@view');
+        Gate::define(Gates::CMS_VIEW_DASHBOARD, 'App\Policies\Gates\DashboardGate@view');
     }
 }

@@ -13,7 +13,7 @@
                 'title' => __('messages.home'),
             ],
             [
-                'url' => route('cms.continents.index'),
+                'url' => route('cms.continents.index', ['locale' => $locale]),
                 'title' => __('messages.continents'),
             ],
         ];

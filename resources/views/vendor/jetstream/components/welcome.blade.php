@@ -27,7 +27,7 @@
                 All Cities Configuration
             </div>
 
-            <a href="{{ route('cms.cities.index') }}">
+            <a href="{{ route('cms.cities.index', ['locale' => $locale]) }}">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                         <div>Explore the cities</div>
 

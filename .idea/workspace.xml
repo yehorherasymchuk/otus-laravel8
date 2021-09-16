@@ -2,54 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66441e06-7777-45a1-aba6-f7b1221f7ee3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/Requests/ContinentFormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/Requests/StoreContinentFormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/Requests/UpdateContinentFormRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Continents/ContinentsService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Continents/Exceptions/ValidationException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Continents/Handlers/CreateContinentHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Continents/Handlers/UpdateContinentHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Continents/Repositories/ContinentsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Eloquent/Repositories/EloquentContinentRepostory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/cities-list/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/cities-list/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/cities-list/item.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/form/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/form/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/form/errors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/form/fields.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/header/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/header/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/header/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/header/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/list/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/list/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/list/item.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cms/continents/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CustomAuthenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/WithUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Policies/ContinentPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Auth/Handlers/AttemptingEventHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Auth/Handlers/AuthenticatedEventHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Companies/DTO/CompaniesFiltersDTO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Companies/Resolvers/FilteredCompaniesResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/401.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/403.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/419.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/429.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/500.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/illustrated-layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/minimal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Cities/CitiesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Cities/CitiesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/CmsBaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/CmsBaseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/CmsContinentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/CmsContinentsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/FormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/FormRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Routes/Providers/CMS/CMSRoutes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Routes/Providers/CMS/CMSRoutes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/DashboardGate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Gates/DashboardGate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/Gates.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Gates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Auth/AuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Auth/AuthService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Companies/Repositories/EloquentCompanyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Companies/Repositories/EloquentCompanyRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Services/Routes/Providers/CMS/CMSRoutesProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Routes/Providers/CMS/CMSRoutesProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/cities/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/cities/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/blocks/form/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/form/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/blocks/header/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/header/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/blocks/list/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/blocks/list/item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/continents/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/continents/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/countries/blocks/form/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/blocks/form/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/blocks/form/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/blocks/form/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/blocks/header/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/blocks/header/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/blocks/header/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/blocks/header/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/blocks/list/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/blocks/list/item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/countries/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/countries/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +230,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/Requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Middleware" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -241,18 +246,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Middleware" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/Requests" />
       <recent name="$PROJECT_DIR$/resources/views/cms" />
       <recent name="$PROJECT_DIR$/app/Services/Continents/Handlers" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api/Countries" />
-      <recent name="$PROJECT_DIR$/resources/views/cms/countries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Middleware/Cms" />
+      <recent name="$PROJECT_DIR$/app/Services/Companies" />
+      <recent name="$PROJECT_DIR$/app/Services/Companies/DTO" />
+      <recent name="$PROJECT_DIR$/app/Policies/Gates" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api/Countries" />
-      <recent name="$PROJECT_DIR$/app/Services" />
-      <recent name="$PROJECT_DIR$/resources/views/products/blocks/header" />
-      <recent name="$PROJECT_DIR$/resources/views/products/blocks" />
-      <recent name="$PROJECT_DIR$/resources/sass/products" />
     </key>
   </component>
   <component name="RunManager">
@@ -284,6 +289,9 @@
       <workItem from="1606410111148" duration="7441000" />
       <workItem from="1629391769806" duration="7005000" />
       <workItem from="1629448540672" duration="605000" />
+      <workItem from="1629996701992" duration="7220000" />
+      <workItem from="1631033297440" duration="375000" />
+      <workItem from="1631033738559" duration="6416000" />
     </task>
     <servers />
   </component>

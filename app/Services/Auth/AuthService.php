@@ -15,6 +15,15 @@ use App\Models\User;
 class AuthService
 {
 
+    private UserCompanyRepository $userCompanyRepository;
+
+    public function __construct(
+        UserCompanyRepository $userCompanyRepository
+    )
+    {
+        $this->userCompanyRepository = $userCompanyRepository;
+    }
+
     public function hasUserAccessToCompanyPermission(User $user, Company $company, string $permission): bool
     {
         if (!$this->hasUserPermission($user, Company::class, $permission)) {

@@ -25,6 +25,7 @@ class CmsCountriesController extends Controller
     {
 //        $this->authorize(Permission::VIEW_ANY, Country::class);
 
+        info('test CmsCountriesController');
         View::share([
             'countries' => Country::paginate(),
         ]);
@@ -93,7 +94,6 @@ class CmsCountriesController extends Controller
      */
     public function show(Country $country)
     {
-
 //        $this->authorize(Abilities::VIEW, $country);
 
         return view('countries.show', [

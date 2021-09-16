@@ -63,4 +63,9 @@ class Company extends Model
         return $this->belongsToMany(User::class)
             ->using(CompanyUser::class);
     }
+
+    public function hasProduct(): bool
+    {
+        return !!($this->id % 2);
+    }
 }

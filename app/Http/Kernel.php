@@ -2,6 +2,11 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\CheckAge;
+use App\Http\Middleware\CheckUserNotBanned;
+use App\Http\Middleware\Cms\CmsViewShareCommonSettings;
+use App\Http\Middleware\CustomAuthenticate;
+use App\Http\Middleware\Localize;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -23,6 +28,19 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 
+    protected $middlewarePriority = [
+        \Illuminate\Cookie\Middleware\EncryptCookies::class,
+        \Illuminate\Session\Middleware\StartSession::class,
+        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+        \Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests::class,
+        \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        \Illuminate\Session\Middleware\AuthenticateSession::class,
+        \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        \Illuminate\Auth\Middleware\Authorize::class,
+        CustomAuthenticate::class,
+        CheckUserNotBanned::class,
+    ];
+
     /**
      * The application's route middleware groups.
      *
@@ -42,6 +60,12 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ],
+
+        'cms' => [
+            'auth',
+            Localize::class,
+            CmsViewShareCommonSettings::class,
         ],
     ];
 

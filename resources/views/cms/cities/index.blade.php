@@ -8,7 +8,7 @@
             </div>
             <div class="ml-3">
                 <h2 class="font-semibold leading-tight">
-                    <a href="{{ route('cms.cities.create') }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    <a href="{{ route('cms.cities.create', ['locale' => $locale]) }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                         @lang('Create City')
                     </a>
                 </h2>

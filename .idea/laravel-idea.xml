@@ -4,6 +4,7 @@
     <option name="frameworkFound" value="true" />
     <option name="generationStringSettings">
       <map>
+        <entry key="createFormRequest:baseClass" value="App\Http\Requests\FormRequest" />
         <entry key="createModel:namespace" value="Models" />
       </map>
     </option>

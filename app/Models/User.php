@@ -72,13 +72,19 @@ class User extends Authenticatable
     const LEVEL_MODERATOR = 20;
     const LEVEL_ADMIN = 30;
 
+    const STATUS_CONFIRMED = 10;
+    const STATUS_BANNED = 100;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'password',
+        'api_token',
     ];
 
     /**
@@ -88,7 +94,6 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'api_token',
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',
@@ -130,6 +135,16 @@ class User extends Authenticatable
     public function isModerator(): bool
     {
         return $this->level === self::LEVEL_MODERATOR;
+    }
+
+    public function isUser(): bool
+    {
+        return $this->level === self::LEVEL_USER;
+    }
+
+    public function isBanned(): bool
+    {
+        return $this->status === self::STATUS_BANNED;
     }
 
 }

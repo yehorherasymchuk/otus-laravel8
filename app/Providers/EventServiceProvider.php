@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Services\Auth\Handlers\AttemptingEventHandler;
+use App\Services\Auth\Handlers\AuthenticatedEventHandler;
+use Illuminate\Auth\Events\Attempting;
 use Illuminate\Auth\Events\Authenticated;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -20,7 +23,10 @@ class EventServiceProvider extends ServiceProvider
             SendEmailVerificationNotification::class,
         ],
         Authenticated::class => [
-
+            AuthenticatedEventHandler::class
+        ],
+        Attempting::class => [
+            AttemptingEventHandler::class
         ],
     ];
 

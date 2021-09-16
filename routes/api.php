@@ -19,8 +19,6 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 //
-//Route::get('/users/{user}/{lang?}', function (int $id, ?string $locale = null) {
-//    return response()->json([
-//        'user' => Auth::user(),
-//    ], 200);
-//})->middleware('auth:api');
+Route::get('/users', function () {
+    return response()->json(Auth::user());
+})->middleware('auth:api');

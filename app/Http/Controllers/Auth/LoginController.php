@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
+
+    protected int $maxAttempts = 2;
+
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -36,7 +39,8 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest')
+            ->except('logout');
     }
 
     public function signIn(Request $request)
