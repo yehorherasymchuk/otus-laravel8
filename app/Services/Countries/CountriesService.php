@@ -10,6 +10,7 @@ namespace App\Services\Countries;
 
 use App\Models\Country;
 use App\Services\Countries\Handlers\CreateCountryHandler;
+use App\Services\Countries\Jobs\CreateCountryJob;
 use App\Services\Countries\Repositories\CountryRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
@@ -45,17 +46,9 @@ class CountriesService
         return $this->countryRepository->search();
     }
 
-    /**
-     * @param array $data
-     * @return Country
-     */
-    public function storeCountry(array $data): Country
+    public function storeCountry(array $data): void
     {
-        $country = $this->createCountryHandler->handle($data);
-
-        // do some logic
-
-        return $country;
+        CreateCountryJob::dispatch($data);
     }
 
     /**

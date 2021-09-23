@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class UsersTableSeeder extends Seeder
 {
@@ -15,9 +16,10 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::factory(1)->create([
-            'email' => 'yehor2@otus.ru',
+            'email' => 'yehor3@otus.ru',
             'level' => User::LEVEL_ADMIN,
-            'api_token' => 'fdsfdsfsafasfadsfwe423rfdfdzsfawR12WRAS',
+            'api_token' => Str::random(),
+            'password' => \Hash::make('yehor3@otus.ru'),
         ]);
         User::factory(10)->create();
     }

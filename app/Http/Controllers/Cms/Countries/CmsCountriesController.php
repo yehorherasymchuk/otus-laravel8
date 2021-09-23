@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Cms\Countries;
 
+use App;
 use App\Http\Controllers\Cms\Countries\Requests\StoreCountryRequest;
 use App\Http\Controllers\Cms\Countries\Requests\UpdateCountryRequest;
 use App\Policies\Permission;
+use App\Services\Countries\Jobs\CreateCountryJob;
 use App\Services\Routes\Providers\CMS\CMSRoutes;
 use View;
 use App\Models\Country;
@@ -27,7 +29,7 @@ class CmsCountriesController extends Controller
 
         info('test CmsCountriesController');
         View::share([
-            'countries' => Country::paginate(),
+            'countries' => Country::paginate(20),
         ]);
 
         return view('countries.index');
@@ -55,7 +57,9 @@ class CmsCountriesController extends Controller
         $this->getCountriesService()->storeCountry($data);
 
         return redirect(
-            route(CMSRoutes::CMS_COUNTRIES_INDEX),
+            route(CMSRoutes::CMS_COUNTRIES_INDEX, [
+                'locale' => App::getLocale(),
+            ]),
         );
     }
 
