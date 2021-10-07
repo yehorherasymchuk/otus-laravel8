@@ -5,41 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66441e06-7777-45a1-aba6-f7b1221f7ee3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Users/ChangeUsersPasswords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Users/UsersInfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/Users/UsersList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/Requests/ChangeUserPasswordRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users/UpdateUserPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/QueueName.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/DTOs/SmsDTO.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/Handlers/SendSMSHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/Jobs/SendSmsJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/Providers/LogSMSProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/Providers/MainSMSProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/Providers/SMSProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Notifications/SMS/SmsService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Users/Handlers/ChangeUserPasswordHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Users/Repositories/EloquentUserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Users/Repositories/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Users/UsersService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Console/Commands/Users/ChangeUserPasswordTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Services/Handlers/ChangeUserPasswordHandlerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/otus-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/otus-blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoices/InvoiceCreateController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Client/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/Invoice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/Statuses/Cancelled.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/Statuses/Completed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/Statuses/Draft.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/Statuses/Processing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/Statuses/Status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice/VO/InvoiceId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Item/Item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Item/VO/ItemId.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Item/VO/LineItem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Item/VO/Money.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Item/VO/Name.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Exceptions/CanNotChangeInvoiceStatusException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Exceptions/EmptyItemNameException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Exceptions/OrdersException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Handlers/CreateInvoiceHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Repositories/InvoiceRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/DDD/Orders/Services/InvoicesService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cms/Countries/CmsCountriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Countries/CountriesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Countries/CountriesService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +215,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/Notifications/SMS/Providers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Statuses" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -242,18 +231,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Statuses" />
       <recent name="$PROJECT_DIR$/app/Services/Notifications/SMS/Providers" />
       <recent name="$PROJECT_DIR$/app/Console/Commands" />
       <recent name="$PROJECT_DIR$/app/Http/Middleware" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Cms/Continents/Requests" />
-      <recent name="$PROJECT_DIR$/resources/views/cms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Item" />
+      <recent name="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Invoice" />
+      <recent name="$PROJECT_DIR$/app/Services/DDD/Orders/Entities/Statuses" />
       <recent name="$PROJECT_DIR$/app/Services/Countries/Jobs" />
       <recent name="$PROJECT_DIR$/app/Console/Commands/Users" />
-      <recent name="$PROJECT_DIR$/app/Http/Middleware/Cms" />
-      <recent name="$PROJECT_DIR$/app/Services/Companies" />
-      <recent name="$PROJECT_DIR$/app/Services/Companies/DTO" />
     </key>
   </component>
   <component name="RunManager">
@@ -290,6 +279,7 @@
       <workItem from="1631033738559" duration="6416000" />
       <workItem from="1631811460741" duration="7384000" />
       <workItem from="1632243901460" duration="6971000" />
+      <workItem from="1632415570978" duration="4653000" />
     </task>
     <servers />
   </component>
